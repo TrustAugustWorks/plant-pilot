@@ -1,0 +1,427 @@
+[
+  {
+    "id": "aloe-vera",
+    "name": "Aloe vera",
+    "nameDa": "Aloe vera",
+    "baseIntervalDays": 14,
+    "lightPreference": "sun",
+    "waterFraction": 0.12,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "cactus",
+    "careNote": "Soak, then let soil dry completely. Water only a little in winter.",
+    "sources": [
+      "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+      "https://missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b628",
+      "https://www.rhs.org.uk/shows-events/rhs-urban-show/houseplant-profiles/houseplants-for-sunlight"
+    ]
+  },
+  {
+    "id": "areca-palm",
+    "name": "Areca palm",
+    "nameDa": "Guldpalme",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.25,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "tree",
+    "careNote": "Water when the top cm of soil is dry. Never let it dry out or stand in water. Brown tips mean dry air.",
+    "sources": [
+      "https://hgic.clemson.edu/factsheet/indoor-palms/",
+      "https://www.rhs.org.uk/plants/128311/dypsis-lutescens/details",
+      "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=291457",
+      "https://www.plantorama.dk/guide/groenne-stueplanter/pasning-af-guldpalme"
+    ]
+  },
+  {
+    "id": "basil",
+    "name": "Basil",
+    "nameDa": "Basilikum",
+    "baseIntervalDays": 2,
+    "lightPreference": "sun",
+    "waterFraction": 0.3,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "herb",
+    "careNote": "Keep soil moist but not soggy. Water in the morning, at the soil not the leaves.",
+    "sources": [
+      "https://www.rhs.org.uk/herbs/basil/grow-your-own",
+      "https://extension.umn.edu/vegetables/growing-basil",
+      "https://hgic.clemson.edu/factsheet/basil/"
+    ]
+  },
+  {
+    "id": "cactus",
+    "name": "Cactus",
+    "nameDa": "Kaktus",
+    "baseIntervalDays": 21,
+    "lightPreference": "sun",
+    "waterFraction": 0.1,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "cactus",
+    "careNote": "Water when soil is fully dry. Keep almost dry and cool in winter.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/types/cacti-succulents/houseplants/growing-guide",
+      "https://hgic.clemson.edu/factsheet/indoor-cacti/",
+      "https://www.missouribotanicalgarden.org/Portals/0/Gardening/Gardening%20Help/Factsheets/Cactus%20and%20Succulents10.pdf"
+    ]
+  },
+  {
+    "id": "calathea",
+    "name": "Calathea",
+    "nameDa": "Calathea",
+    "baseIntervalDays": 4,
+    "lightPreference": "bright",
+    "waterFraction": 0.3,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "leaf",
+    "careNote": "Keep soil evenly moist, out of direct sun. Curling leaves mean it is too dry.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/calathea/growing-guide",
+      "https://plants.ces.ncsu.edu/plants/goeppertia-makoyana/"
+    ]
+  },
+  {
+    "id": "fiddle-leaf-fig",
+    "name": "Fiddle leaf fig",
+    "nameDa": "Violinfigen",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.22,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "tree",
+    "careNote": "Water when the top 5 cm are dry. Dislikes being moved and cold drafts.",
+    "sources": [
+      "https://plants.ces.ncsu.edu/plants/ficus-lyrata/",
+      "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?taxonid=282753",
+      "https://www.plantorama.dk/guide/groenne-stueplanter/pasning-af-violinfigen"
+    ]
+  },
+  {
+    "id": "pelargonium",
+    "name": "Geranium (Pelargonium)",
+    "nameDa": "Pelargonie",
+    "baseIntervalDays": 5,
+    "lightPreference": "sun",
+    "waterFraction": 0.25,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "flower",
+    "careNote": "Water when the soil surface is dry. Bring inside before frost.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/pelargonium/growing-guide",
+      "https://extension.umn.edu/flowers/growing-geraniums-minnesota",
+      "https://hgic.clemson.edu/factsheet/growing-geraniums-indoors/"
+    ]
+  },
+  {
+    "id": "kentia-palm",
+    "name": "Kentia palm",
+    "nameDa": "Kentiapalme",
+    "baseIntervalDays": 10,
+    "lightPreference": "bright",
+    "waterFraction": 0.2,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "tree",
+    "careNote": "Water when the top few cm are dry. Copes with low light; direct sun scorches it.",
+    "sources": [
+      "https://plants.ces.ncsu.edu/plants/howea-forsteriana/",
+      "https://www.rhs.org.uk/shows-events/rhs-urban-show/houseplant-profiles/houseplants-for-humidity",
+      "https://hgic.clemson.edu/factsheet/indoor-palms/",
+      "https://lex.dk/kentiapalme"
+    ]
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "nameDa": "Lavendel",
+    "baseIntervalDays": 7,
+    "lightPreference": "sun",
+    "waterFraction": 0.2,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "flower",
+    "careNote": "Water when compost starts to dry. Needs good drainage; keep fairly dry in winter.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/lavender/growing-guide",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-herbs"
+    ]
+  },
+  {
+    "id": "mint",
+    "name": "Mint",
+    "nameDa": "Mynte",
+    "baseIntervalDays": 2,
+    "lightPreference": "bright",
+    "waterFraction": 0.3,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "herb",
+    "careNote": "Likes moist soil and spreads fast. Pots need extra water in hot weather.",
+    "sources": [
+      "https://www.rhs.org.uk/herbs/mint/grow-your-own",
+      "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-herbs"
+    ]
+  },
+  {
+    "id": "monstera",
+    "name": "Monstera",
+    "nameDa": "Monstera / Fingerfilodendron",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.25,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "leaf",
+    "careNote": "Water when the top 3-5 cm are dry. Strong midday sun can scorch the leaves.",
+    "sources": [
+      "https://extension.umn.edu/houseplants/propagating-monstera-deliciosa",
+      "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/common-name/swiss-cheese-plant/",
+      "https://www.rhs.org.uk/plants/swiss-cheese-plants",
+      "https://www.bolius.dk/fingerfilodendron-saadan-passer-og-plejer-du-den-97842"
+    ]
+  },
+  {
+    "id": "orchid",
+    "name": "Orchid (Phalaenopsis)",
+    "nameDa": "Orkidé",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.2,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "flower",
+    "careNote": "Water when roots turn silvery. Never leave standing in water.",
+    "sources": [
+      "https://hgic.clemson.edu/general-care-for-phalaenopsis-orchids/",
+      "https://www.rhs.org.uk/plants/phalaenopsis/growing-guide"
+    ]
+  },
+  {
+    "id": "parlour-palm",
+    "name": "Parlour palm",
+    "nameDa": "Bjergpalme",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.22,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "tree",
+    "careNote": "Let the top of the soil dry, then water. Tolerates shade. Use less water in winter.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/chamaedorea/growing-guide",
+      "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/common-name/parlor-palm/",
+      "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b631",
+      "https://lex.dk/bjergpalme"
+    ]
+  },
+  {
+    "id": "peace-lily",
+    "name": "Peace lily",
+    "nameDa": "Fredslilje",
+    "baseIntervalDays": 5,
+    "lightPreference": "bright",
+    "waterFraction": 0.3,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "flower",
+    "careNote": "Keep evenly moist. Droops when thirsty and recovers quickly after watering.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/peace-lilies/how-to-grow-peace-lilies",
+      "https://hgic.clemson.edu/factsheet/peace-lily/",
+      "https://edis.ifas.ufl.edu/ep477"
+    ]
+  },
+  {
+    "id": "ponytail-palm",
+    "name": "Ponytail palm",
+    "nameDa": "Elefantfod",
+    "baseIntervalDays": 14,
+    "lightPreference": "sun",
+    "waterFraction": 0.12,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "tree",
+    "careNote": "Stores water in its swollen base. Soak, then let dry out. Overwatering is the main risk.",
+    "sources": [
+      "https://hort.extension.wisc.edu/articles/ponytail-palm-beaucarnea-recurvata/",
+      "https://plants.ces.ncsu.edu/plants/beaucarnea-recurvata/",
+      "https://www.rhs.org.uk/plants/1993/beaucarnea-recurvata/details",
+      "https://lex.dk/elefantfod_-_plante"
+    ]
+  },
+  {
+    "id": "pothos",
+    "name": "Pothos",
+    "nameDa": "Guldranke",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.25,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "leaf",
+    "careNote": "Let the top 2 cm dry between waterings. Tolerates low light. Droopy leaves mean thirsty.",
+    "sources": [
+      "https://hort.extension.wisc.edu/articles/pothos-epipremmum-aureum/",
+      "https://hgic.clemson.edu/factsheet/how-to-grow-pothos-indoors-epipremnum-spp-care-cultivars-and-common-problems/",
+      "https://www.rhs.org.uk/plants/epipremnum/growing-guide",
+      "https://www.plantorama.dk/guide/groenne-stueplanter/pasning-af-guldranke"
+    ]
+  },
+  {
+    "id": "rosemary",
+    "name": "Rosemary",
+    "nameDa": "Rosmarin",
+    "baseIntervalDays": 5,
+    "lightPreference": "sun",
+    "waterFraction": 0.2,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "herb",
+    "careNote": "Water when the top few cm are dry. Never let the pot stand in water.",
+    "sources": [
+      "https://www.rhs.org.uk/herbs/rosemary/grow-your-own",
+      "https://plants.ces.ncsu.edu/plants/salvia-rosmarinus/"
+    ]
+  },
+  {
+    "id": "rubber-plant",
+    "name": "Rubber plant",
+    "nameDa": "Gummitræ",
+    "baseIntervalDays": 10,
+    "lightPreference": "bright",
+    "waterFraction": 0.2,
+    "winterRest": false,
+    "outdoorOk": false,
+    "icon": "tree",
+    "careNote": "Let soil dry partly between waterings. Overwatering and drafts cause leaf drop.",
+    "sources": [
+      "https://plants.ces.ncsu.edu/plants/ficus-elastica/",
+      "https://edis.ifas.ufl.edu/st252",
+      "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b597"
+    ]
+  },
+  {
+    "id": "snake-plant",
+    "name": "Snake plant",
+    "nameDa": "Svigermors skarpe tunge",
+    "baseIntervalDays": 14,
+    "lightPreference": "bright",
+    "waterFraction": 0.15,
+    "winterRest": true,
+    "outdoorOk": false,
+    "icon": "leaf",
+    "careNote": "Very drought tolerant. Overwatering is the main risk. Avoid water in the rosette.",
+    "sources": [
+      "https://hgic.clemson.edu/exciting-houseplant-selections-for-beginners/",
+      "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "https://www.missouribotanicalgarden.org/PlantFinder/PlantFinderDetails.aspx?kempercode=b617",
+      "https://www.plantorama.dk/guide/groenne-stueplanter/pasning-af-sansevieria"
+    ]
+  },
+  {
+    "id": "spider-plant",
+    "name": "Spider plant",
+    "nameDa": "Grønlilje",
+    "baseIntervalDays": 7,
+    "lightPreference": "bright",
+    "waterFraction": 0.25,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "sprout",
+    "careNote": "Let the top of the soil dry slightly. Brown tips can mean dry air or tap water.",
+    "sources": [
+      "https://hort.extension.wisc.edu/articles/spider-plant-chlorophytum-comosum/",
+      "https://hgic.clemson.edu/factsheet/spider-plant/",
+      "https://www.rhs.org.uk/plants/spider-plants/growing-guide"
+    ]
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "nameDa": "Jordbær",
+    "baseIntervalDays": 2,
+    "lightPreference": "sun",
+    "waterFraction": 0.3,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "fruit",
+    "careNote": "Keep soil moist while fruiting. Water in the morning at the base, not the fruit.",
+    "sources": [
+      "https://hort.extension.wisc.edu/articles/growing-strawberries-in-containers/",
+      "https://www.rhs.org.uk/fruit/strawberries/grow-your-own"
+    ]
+  },
+  {
+    "id": "succulent",
+    "name": "Succulent",
+    "nameDa": "Sukkulent",
+    "baseIntervalDays": 14,
+    "lightPreference": "sun",
+    "waterFraction": 0.12,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "cactus",
+    "careNote": "Soak, then let dry out completely.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/types/cacti-succulents/houseplants/growing-guide",
+      "https://extension.umn.edu/houseplants/cacti-and-succulents"
+    ]
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "nameDa": "Tomat",
+    "baseIntervalDays": 1,
+    "lightPreference": "sun",
+    "waterFraction": 0.35,
+    "winterRest": false,
+    "outdoorOk": true,
+    "icon": "fruit",
+    "careNote": "Needs daily water in summer, consistent moisture prevents split fruit.",
+    "sources": [
+      "https://www.rhs.org.uk/vegetables/tomatoes/grow-your-own",
+      "https://hgic.clemson.edu/tomatoes-in-containers/",
+      "https://extension.umn.edu/vegetables/growing-tomatoes"
+    ]
+  },
+  {
+    "id": "yucca",
+    "name": "Yucca",
+    "nameDa": "Palmelilje / Yuccapalme",
+    "baseIntervalDays": 10,
+    "lightPreference": "sun",
+    "waterFraction": 0.18,
+    "winterRest": true,
+    "outdoorOk": true,
+    "icon": "tree",
+    "careNote": "Let soil dry between waterings; water even less in winter. Limp yellow leaves mean too wet.",
+    "sources": [
+      "https://www.rhs.org.uk/plants/yucca/growing-guide",
+      "https://plants.ces.ncsu.edu/plants/yucca-gigantea/",
+      "https://lex.dk/palmelilje"
+    ]
+  },
+  {
+    "id": "zz-plant",
+    "name": "ZZ plant",
+    "nameDa": "Zamioculcas",
+    "baseIntervalDays": 14,
+    "lightPreference": "shade",
+    "waterFraction": 0.15,
+    "winterRest": true,
+    "outdoorOk": false,
+    "icon": "leaf",
+    "careNote": "Stores water in its roots. Water only when soil is fully dry.",
+    "sources": [
+      "https://hgic.clemson.edu/factsheet/zz-plant-zamioculcas-zamiifolia-indoor-care-growing-tips-plant-guide/",
+      "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/",
+      "https://edis.ifas.ufl.edu/ep480"
+    ]
+  }
+]
