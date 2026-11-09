@@ -37,10 +37,12 @@ As the resident, I want a list next to the map that shows how long until each pl
 As anyone watering, I want to see how much water each plant needs so I don't over- or under-water.
 
 **Acceptance scenarios** (formula: `docs/architecture.md` section 5):
-1. **Given** the Monstera (24 cm pot, fraction 0.25, sun) in autumn, **Then** the amount is 1.7 L (6.91 L x 0.25 x 1.1 x 0.9 = 1.71 L -> 1700 ml).
-2. **Given** the same Monstera in summer, **Then** 2.2 L (x 1.15 instead of 0.9 -> 2185 ml -> 2200 ml); in winter 1.45 L (x 0.75 -> 1425.6 ml -> 1450 ml). _Amended 2026-11-09: the draft said 1.4 L, which contradicts the "round to 50 ml" rule. Amounts of 1000 ml and above are shown in litres with up to two decimals, e.g. "1.45 L"._
-3. **Given** a Basil (12 cm pot, fraction 0.3, sun) in autumn, **Then** 250 ml (256.6 ml rounded to 50).
-4. **Given** a Cactus (10 cm pot, fraction 0.1, bright) in winter, **Then** 50 ml (37.5 ml, raised to the 50 ml minimum).
+1. **Given** the Monstera (24 cm pot, fraction 0.125, sun) in autumn, **Then** the amount is 850 ml (6.91 L x 0.125 x 1.1 x 0.9 = 855 ml -> 850 ml).
+2. **Given** the same Monstera in summer, **Then** 1.1 L (x 1.15 instead of 0.9 -> 1093 ml -> 1100 ml); in winter 700 ml (x 0.75 -> 712.8 ml -> 700 ml). Amounts of 1000 ml and above are shown in litres with up to two decimals, e.g. "1.45 L".
+3. **Given** a Basil (12 cm pot, fraction 0.15, sun) in autumn, **Then** 150 ml (128.3 ml rounded to 50).
+4. **Given** a Cactus (10 cm pot, fraction 0.05, bright) in winter, **Then** 50 ml (18.75 ml, raised to the 50 ml minimum).
+
+_Amended 2026-11-09: all library water fractions were halved after review. The old values (e.g. 1.7 L every 6 days for a 24 cm Monstera) were closer to a full soak-through than to what the soil absorbs, which risks overwatering. A watering should refill roughly the dried top third of the pot, about 10-12% of pot volume for typical foliage plants._
 5. **Given** any plant, **Then** the amount is shown in the list row, in the plant info, and on the list's Water button on phones.
 
 ### User story 5 - Watering follows the seasons (Priority: P1)

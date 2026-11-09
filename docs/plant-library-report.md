@@ -102,3 +102,7 @@ No value is under 1 day or over 1 L. These results look questionable:
 
 - The contract checks are in `tests/unit/plant-library.test.ts` (Vitest), with test names like `spec001_FR010_*`. The tests have not been run because Node.js is not installed.
 - The same rules were checked with a Python script run as `python -I`: 25 entries and 0 errors. The script also produced the pot table above.
+
+## Change 2026-11-09: water fractions halved
+
+At the user's request every `waterFraction` was halved (e.g. monstera 0.25 -> 0.125, kentia palm 0.2 -> 0.1, cactus 0.1 -> 0.05). The old values gave close to a full soak-through (1.7 L every 6 days for a 24 cm Monstera), not the amount the soil absorbs between waterings. That over-watering risk was the reason. A watering should refill roughly the dried top third of the pot: about 10-12% of pot volume for typical foliage. The fraction tables above show the old values.

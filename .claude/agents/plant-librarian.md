@@ -17,7 +17,7 @@ You are the plant librarian for the Plant Watering Pilot. Your only job is the p
 - For each entry research, from at least two independent, reputable sources (botanical gardens, university extension services, established horticulture sites; not shops' SEO blogs alone):
   - `baseIntervalDays`: typical days between waterings in spring, in bright indirect light, in a normal-sized pot.
   - `lightPreference`: sun / bright / shade.
-  - `waterFraction`: share of pot volume per watering. Guide: cacti and succulents 0.08-0.15, drought-tolerant foliage 0.15-0.2, typical foliage 0.2-0.25, moisture lovers and herbs 0.25-0.35.
+  - `waterFraction`: share of pot volume per watering. Guide (halved 2026-11-09; a watering refills the dried top part of the pot, not the whole pot): cacti and succulents 0.05-0.07, drought-tolerant foliage 0.07-0.1, typical foliage 0.1-0.125, moisture lovers and herbs 0.125-0.175.
   - `winterRest`: true when sources describe winter dormancy with sharply reduced watering.
   - `outdoorOk`, `icon`, `careNote` (max 120 chars, plain English, practical), `nameDa` (common Danish name; check Danish sources).
   - `sources`: the URLs you actually used.

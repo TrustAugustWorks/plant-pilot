@@ -10,11 +10,11 @@ const type = (over: Partial<PlantType>): PlantType => ({
   id: 'x', name: 'X', nameDa: 'X', baseIntervalDays: 7, lightPreference: 'bright', waterFraction: 0.25,
   winterRest: false, outdoorOk: false, icon: 'leaf', careNote: '', sources: [], ...over,
 });
-const monstera = type({ id: 'monstera', name: 'Monstera', baseIntervalDays: 7, waterFraction: 0.25 });
+const monstera = type({ id: 'monstera', name: 'Monstera', baseIntervalDays: 7, waterFraction: 0.125 });
 const pothos = type({ id: 'pothos', baseIntervalDays: 7 });
-const basil = type({ id: 'basil', baseIntervalDays: 2, lightPreference: 'sun', waterFraction: 0.3 });
+const basil = type({ id: 'basil', baseIntervalDays: 2, lightPreference: 'sun', waterFraction: 0.15 });
 const peaceLily = type({ id: 'peace-lily', baseIntervalDays: 5 });
-const cactus = type({ id: 'cactus', baseIntervalDays: 21, waterFraction: 0.1, winterRest: true });
+const cactus = type({ id: 'cactus', baseIntervalDays: 21, waterFraction: 0.05, winterRest: true });
 const TODAY = '2026-11-04';
 
 describe('dates', () => {
@@ -93,18 +93,21 @@ describe('spec002 next due, days left, status, text', () => {
 });
 
 describe('spec002 water amount', () => {
-  it('spec002_US4_1_monstera_autumn_1_7_L', () => {
+  it('spec002_US4_1_monstera_autumn_850_ml', () => {
     const ml = waterAmountMl(monstera, 24, 'sun', 'autumn');
-    expect(ml).toBe(1700);
-    expect(formatAmount(ml)).toBe('1.7 L');
+    expect(ml).toBe(850);
+    expect(formatAmount(ml)).toBe('850 ml');
   });
-  it('spec002_US4_2_monstera_summer_2_2_L_winter_1_45_L', () => {
-    expect(formatAmount(waterAmountMl(monstera, 24, 'sun', 'summer'))).toBe('2.2 L');
-    expect(waterAmountMl(monstera, 24, 'sun', 'winter')).toBe(1450);
+  it('spec002_US4_2_monstera_summer_1_1_L_winter_700_ml', () => {
+    expect(formatAmount(waterAmountMl(monstera, 24, 'sun', 'summer'))).toBe('1.1 L');
+    expect(waterAmountMl(monstera, 24, 'sun', 'winter')).toBe(700);
+  });
+  it('spec002_US4_2_litres_shown_with_up_to_two_decimals', () => {
     expect(formatAmount(1450)).toBe('1.45 L');
+    expect(formatAmount(2000)).toBe('2 L');
   });
-  it('spec002_US4_3_basil_autumn_250_ml', () => {
-    expect(formatAmount(waterAmountMl(basil, 12, 'sun', 'autumn'))).toBe('250 ml');
+  it('spec002_US4_3_basil_autumn_150_ml', () => {
+    expect(formatAmount(waterAmountMl(basil, 12, 'sun', 'autumn'))).toBe('150 ml');
   });
   it('spec002_US4_4_cactus_winter_minimum_50_ml', () => {
     expect(waterAmountMl(cactus, 10, 'bright', 'winter')).toBe(50);

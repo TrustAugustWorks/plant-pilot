@@ -17,7 +17,7 @@ Aligned with the home ERP glossary so the pilot can be merged into it later.
 | **Effective interval** | The plant's interval after adjusting the base interval for its spot light and the current season. |
 | **Pot size** | The pot's top diameter in cm, entered per plant. |
 | **Pot volume** | Estimated soil volume in litres: diameter³ / 2000. |
-| **Water fraction** | Plant type property: share of the pot volume to give per watering (e.g. 0.1 cactus, 0.3 basil). |
+| **Water fraction** | Plant type property: share of the pot volume to give per watering (e.g. 0.05 cactus, 0.15 basil). |
 | **Water amount** | How much to give per watering, in ml, rounded to 50 ml. |
 | **Watering event** | A record that a plant was watered at a point in time. |
 | **Last watered** | The time of the plant's most recent watering event. |

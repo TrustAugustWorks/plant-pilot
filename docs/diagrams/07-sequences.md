@@ -39,7 +39,7 @@ sequenceDiagram
     M->>S: addWateringEvent(id, monstera, now, manual)
     S-->>M: ok
     M->>D: recompute status
-    M-->>U: icon green, toast "Monstera watered - give 1.7 L - Undo"
+    M-->>U: icon green, toast "Monstera watered - give 850 ml - Undo"
     opt within 10 s
       U->>M: Undo
       M->>S: deleteWateringEvent(id)

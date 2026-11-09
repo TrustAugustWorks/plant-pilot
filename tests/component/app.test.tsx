@@ -51,7 +51,7 @@ describe('spec002 watering', () => {
     const due = await screen.findByRole('region', { name: 'Needs water' });
     expect(within(due).getByRole('button', { name: /^Monstera.*today/ })).toBeInTheDocument();
     expect(within(due).queryByText('Palm')).not.toBeInTheDocument();
-    expect(within(due).getByText('1.7 L')).toBeInTheDocument();
+    expect(within(due).getByText('850 ml')).toBeInTheDocument();
     const ok = screen.getByRole('region', { name: 'OK' });
     expect(within(ok).getByText('Palm')).toBeInTheDocument();
   });

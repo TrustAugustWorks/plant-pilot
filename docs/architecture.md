@@ -93,9 +93,9 @@ All factors live in `src/domain/config.ts`. See ADR 0005 for the rationale.
 **Status**: `due` if days left <= 0; `soon` if 1-2; `ok` if >= 3.
 **Never watered**: when adding a plant, the user gives "last watered" (default: today), so every plant has at least one watering event.
 
-**Worked example** (today Wed 4 Nov 2026, autumn): Monstera, base 7, sun spot, 24 cm pot, water fraction 0.25, last watered Thu 29 Oct.
+**Worked example** (today Wed 4 Nov 2026, autumn): Monstera, base 7, sun spot, 24 cm pot, water fraction 0.125, last watered Thu 29 Oct.
 Interval 7 x 0.75 x 1.15 = 6.04 -> 6 days; next due 4 Nov -> "today".
-Amount 24³/2000 = 6.91 L x 0.25 x 1.1 x 0.9 = 1.71 L -> 1700 ml -> "1.7 L".
+Amount 24³/2000 = 6.91 L x 0.125 x 1.1 x 0.9 = 0.855 L -> 850 ml -> "850 ml".
 
 ## 6. Sequence: tap to water
 

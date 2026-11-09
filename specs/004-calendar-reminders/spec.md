@@ -12,7 +12,7 @@ A calendar subscription URL ("Subscribe from web" in Outlook) must be served by 
 ### User story 1 - Get all reminders into Outlook (Priority: P1)
 **Acceptance scenarios** (today = Wed 4 Nov 2026):
 1. **Given** plants exist, **When** I open "Calendar" and press "Download calendar file", **Then** a file `plant-watering.ics` downloads with one reminder event per planned watering for every active plant, for the next 12 months.
-2. **Given** a Monstera (base 7, sun, 24 cm) next due 4 Nov, **Then** its events are on 4 Nov, 10 Nov (autumn interval 6), 16 Nov, 22 Nov, 28 Nov, 4 Dec, 11 Dec (winter interval 7, from 4 Dec on)... and each event title says "Water Monstera (1.7 L)" with that day's season amount ("1.45 L" in winter).
+2. **Given** a Monstera (base 7, sun, 24 cm) next due 4 Nov, **Then** its events are on 4 Nov, 10 Nov (autumn interval 6), 16 Nov, 22 Nov, 28 Nov, 4 Dec, 11 Dec (winter interval 7, from 4 Dec on)... and each event title says "Water Monstera (850 ml)" with that day's season amount ("700 ml" in winter).
 3. **Given** a plant is overdue, **Then** its first reminder is today.
 4. **Given** the reminder time is 09:00, **Then** every event starts 09:00 local time, lasts 15 minutes and has a reminder alarm at the start time.
 5. **Given** I import the file into Outlook, **Then** each event's description contains the amount, the care note and the app's address.

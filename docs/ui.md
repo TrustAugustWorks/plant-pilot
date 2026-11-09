@@ -50,7 +50,7 @@ Empty state with explanation and an "Upload floor plan" button. Nothing else is 
 - Spot light, e.g. "This spot: sun"
 - Warning if spot and preference mismatch, e.g. "This spot may be too sunny"
 - Effective interval with its inputs, e.g. "Water every 6 days (base 7 · sun · autumn)"
-- Water amount, e.g. "Give about 1.7 L (24 cm pot)"
+- Water amount, e.g. "Give about 850 ml (24 cm pot)"
 - Last watered, e.g. "3 days ago (Mon 2 Nov)"
 - Next due, e.g. "in 2 days (Fri 6 Nov)" or "overdue by 1 day"
 - Care note from the library

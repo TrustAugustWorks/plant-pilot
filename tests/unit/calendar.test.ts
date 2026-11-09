@@ -4,7 +4,7 @@ import type { PlantType } from '../../src/domain/types';
 
 const monstera: PlantType = {
   id: 'monstera', name: 'Monstera', nameDa: 'Monstera', baseIntervalDays: 7, lightPreference: 'bright',
-  waterFraction: 0.25, winterRest: false, outdoorOk: false, icon: 'leaf', careNote: 'Let the top soil dry; avoid sun, it scorches.', sources: [],
+  waterFraction: 0.125, winterRest: false, outdoorOk: false, icon: 'leaf', careNote: 'Let the top soil dry; avoid sun, it scorches.', sources: [],
 };
 const plant = { id: 'p1', name: 'Monstera', spotLight: 'sun' as const, potDiameterCm: 24 };
 
@@ -14,8 +14,8 @@ describe('spec004 planned waterings', () => {
     expect(plan.map((p) => p.date)).toEqual([
       '2026-11-04', '2026-11-10', '2026-11-16', '2026-11-22', '2026-11-28', '2026-12-04', '2026-12-11',
     ]);
-    expect(plan[0].amountMl).toBe(1700);
-    expect(plan[5].amountMl).toBe(1450);
+    expect(plan[0].amountMl).toBe(850);
+    expect(plan[5].amountMl).toBe(700);
   });
   it('spec004_US1_3_overdue_plant_starts_today', () => {
     const plan = planWaterings(monstera, plant, '2026-11-01', '2026-11-04', 10);
@@ -30,7 +30,7 @@ describe('spec004 planned waterings', () => {
 
 describe('spec004 ics', () => {
   const ics = buildIcs(
-    [{ plantId: 'p1', name: 'Monstera, big; one', careNote: monstera.careNote, waterings: [{ date: '2026-11-04', amountMl: 1700 }] }],
+    [{ plantId: 'p1', name: 'Monstera, big; one', careNote: monstera.careNote, waterings: [{ date: '2026-11-04', amountMl: 850 }] }],
     { time: '09:00', appUrl: 'https://example.github.io/plant-pilot/', generatedAt: new Date(Date.UTC(2026, 10, 4, 8, 0, 0)) },
   );
   it('spec004_FR003_event_fields', () => {
@@ -38,7 +38,7 @@ describe('spec004 ics', () => {
     expect(ics).toContain('UID:p1-20261104@plant-pilot');
     expect(ics).toContain('DTSTART:20261104T090000');
     expect(ics).toContain('DTEND:20261104T091500');
-    expect(ics).toContain('SUMMARY:Water Monstera\\, big\\; one (1.7 L)');
+    expect(ics).toContain('SUMMARY:Water Monstera\\, big\\; one (850 ml)');
     expect(ics).toContain('BEGIN:VALARM');
     expect(ics).toContain('TRIGGER:-PT0M');
     expect(ics).toContain('DTSTAMP:20261104T080000Z');
@@ -46,7 +46,7 @@ describe('spec004 ics', () => {
   });
   it('spec004_US1_5_description_has_amount_note_and_url', () => {
     const unfolded = ics.replace(/\r\n /g, '');
-    expect(unfolded).toContain('Give about 1.7 L.');
+    expect(unfolded).toContain('Give about 850 ml.');
     expect(unfolded).toContain('https://example.github.io/plant-pilot/');
   });
   it('spec004_edge_lines_folded_at_75_octets', () => {
